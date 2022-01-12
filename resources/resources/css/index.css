@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Playfair Display ExtraBold";
+    src: url("../fonts/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Playfair Display Regular";
+    src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+* {
+    text-align: center;
+    color: #212121;
+}
+
+body {
+    background-color: rgb(244, 238, 236);
+}
+
+h1 {    
+    font-size: 43px;
+    letter-spacing: 2px;
+    font-family: "Playfair Display ExtraBold", Georgia, serif;    
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
+p a {
+    font-family: "Playfair Display Regular", Georgia, serif;    
+    font-size: 25px;    
+}
+
+.person {
+    margin: 80px auto;
+}
