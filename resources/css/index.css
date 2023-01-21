@@ -8,6 +8,11 @@
     src: url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
 * {
     text-align: center;
     color: #212121;
@@ -17,22 +22,83 @@ body {
     background-color: rgb(244, 238, 236);
 }
 
-h1 {    
-    font-size: 43px;
-    letter-spacing: 2px;
-    font-family: "Playfair Display ExtraBold", Georgia, serif;    
+.name {
+    font-size: 53px;
+    letter-spacing: 3px;
+    font-family: "Playfair Display ExtraBold", Georgia, serif;
     margin: 0;
 }
 
-p {
+.email {
     margin-top: 5px;
+    font-family: "Playfair Display Regular", Georgia, serif;
+    font-size: 31px;
 }
 
-p a {
-    font-family: "Playfair Display Regular", Georgia, serif;    
-    font-size: 25px;    
+.person-block:not(:first-child) {
+    margin-top: 80px;
 }
 
-.person {
-    margin: 80px auto;
+.not-found-block {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.people-block {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.not-found-404 {
+    font-size: 200px;
+    margin: -100px 0 0;
+    letter-spacing: 2px;
+    font-family: "Playfair Display ExtraBold", Georgia, serif;
+}
+
+.not-found-text {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: "Playfair Display Bold", Georgia, serif;
+}
+
+.home-button {
+    align-items: center;
+    background-color: inherit;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: "Playfair Display Bold", Georgia, serif;
+    font-size: 16px;
+    height: 48px;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+
+.home-button:focus {
+    color: #1054a2;
+    border-color: #1054a2;
+}
+
+.home-button:hover {
+    border-color: #1054a2;
+    color: #1054a2;
+    fill: #1054a2;
+}
+
+.home-button:hover {
+    border-color: #1054a2;
+    color: #1054a2;
+    fill: #1054a2;
+}
+
+@media (min-width: 768px) {
+    .home-button {
+        min-width: 170px;
+    }
 }
